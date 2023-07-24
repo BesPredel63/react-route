@@ -4,6 +4,7 @@ import About from "./pages/About";
 import Home from "./pages/Home";
 import NavBar from "./components/UI/NavBar";
 import './styles/styles.css'
+import NoMatch from "./pages/NoMatch";
 
 function App() {
     return (
@@ -12,6 +13,7 @@ function App() {
             <Routes>
                 <Route path='/' element={<Home />} />
                 <Route path='about' element={<About />} />
+                <Route path='*' element={<NoMatch />} />
             </Routes>
         </div>
     )
